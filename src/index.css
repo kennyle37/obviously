@@ -12,3 +12,13 @@ body {
   margin: 0px;
   min-height: 100vh;
 }
+
+.title {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+}

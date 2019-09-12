@@ -3,6 +3,7 @@ import React from 'react';
 import Nav from '../nav/index';
 import SingleInput from './singleInput';
 import DoubleInput from './doubleInput';
+import MembershipInfo from './membershipInfo';
 
 const SettingIndex = () => {
   return (
@@ -23,6 +24,7 @@ const SettingIndex = () => {
         <SingleInput title={"Card Number"} content={"1234-5678-9110-1111"}/>
         <SingleInput title={"Expiration"} content={"10/22"}/>
         <DoubleInput title1={"CVV"} title2={"Zip"} content1={"240"} content2={"01002"}/>
+        <MembershipInfo />
       </div>
       <style jsx>{`
         .setting-container {

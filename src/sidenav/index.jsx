@@ -110,7 +110,6 @@ const Sidenav = () => {
       .sidenav-container {
         background-color: var(--side-nav);
         width: 400px;
-        height: 100vh;
         padding: 40px;
       }
       .sidenav-card {

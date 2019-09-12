@@ -38,6 +38,7 @@ const doubleInput = ({ title1, title2, content1, content2 }) => {
         }
         .doubleInput-info {
           font-size: 18px;
+          padding-top: 10px;
         }
       `}</style>
     </div>
