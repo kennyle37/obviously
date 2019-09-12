@@ -1,0 +1,13 @@
+:root {
+  --main-color: black;
+  --side-nav: #F5F5F5;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+}
