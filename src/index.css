@@ -1,6 +1,7 @@
 :root {
   --main-color: black;
   --side-nav: #F5F5F5;
+  --card-border: #EBEBEB;
 }
 
 html {

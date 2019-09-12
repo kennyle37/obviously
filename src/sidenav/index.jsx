@@ -11,7 +11,7 @@ import {
   faFileCsv, 
   faPlusCircle, 
   faToggleOn, 
-  faToggleOff 
+  faToggleOff,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

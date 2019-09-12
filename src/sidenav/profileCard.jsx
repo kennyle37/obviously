@@ -18,7 +18,7 @@ const ProfileCard = () => {
       <style>{`
         .profile-container {
           display: flex;
-          background-color: #EBEBEB;
+          background-color: var(--card-border);
           height: 85px;
           border-radius: 8px;
           margin-bottom: 20px;
