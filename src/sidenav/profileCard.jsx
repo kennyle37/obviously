@@ -21,7 +21,7 @@ const ProfileCard = () => {
           background-color: var(--card-border);
           height: 85px;
           border-radius: 8px;
-          margin-bottom: 20px;
+          margin-bottom: 40px;
         }
         .profile-pic {
           margin: 12px 20px 20px 20px;

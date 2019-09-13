@@ -34,7 +34,7 @@ const Sidenav = () => {
           Explore
         </span>
       </div>
-      <Link to="/database/">
+      <Link to="/database/" style={{ textDecoration: 'none', 'color': 'var(--gray)' }}>
         <div className="sidenav-card">
           <FontAwesomeIcon className="sidenav-icon" icon={faBook} fixedWidth />
           <span>
@@ -42,7 +42,7 @@ const Sidenav = () => {
           </span>
         </div>
       </Link>
-      <Link to="/settings/">
+      <Link to="/settings/" style={{ textDecoration: 'none', 'color': 'var(--gray)' }}>
         <div className="sidenav-card">
           <FontAwesomeIcon width="100" className="sidenav-icon" icon={faCog} fixedWidth />
           <span>
@@ -79,7 +79,7 @@ const Sidenav = () => {
           State-wise donor prediction
         </span>
       </div>
-      <div>
+      <div className="expand">
         Show all
       </div>
       <Divider />
@@ -107,7 +107,7 @@ const Sidenav = () => {
           External CSV file
         </span>
       </div>
-      <div>
+      <div className="expand">
         Show all
       </div>
       <style jsx>{`
@@ -115,6 +115,10 @@ const Sidenav = () => {
         background-color: var(--side-nav);
         width: 400px;
         padding: 40px;
+        font-family: var(--FontLight);
+        font-size: 18px;
+        color: var(--gray);
+        font-weight: 600;
       }
       .sidenav-card {
         display: flex;
@@ -127,7 +131,11 @@ const Sidenav = () => {
       .sidenav-card-header {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+      }
+      .expand {
+        font-size: 14px;
+        margin-bottom: 30px;
       }
       `}</style>
     </div>
