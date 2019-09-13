@@ -1,5 +1,5 @@
 import React from 'react';
-import SingleInput from './singleInput'
+import SingleInput from '../reusable/singleInput'
 
 const MembershipInfo = () => {
   return (
@@ -14,12 +14,12 @@ const MembershipInfo = () => {
       <p className="cancellation">To cancel your membership, please email us at <a href="mailto:info@obviously.ai">info@obviously.ai</a></p>
       <style jsx>{`
         .membership-container {
-            border: 1.5px solid var(--card-border);
-            border-radius: 8px;
-            box-shadow: 5px 6px 2px -4px var(--side-nav);
-            padding-left: 25px;
-            padding-right: 25px;
-            height: 100%;
+          border: 1.5px solid var(--card-border);
+          border-radius: 8px;
+          box-shadow: 5px 6px 2px -4px var(--side-nav);
+          padding-left: 25px;
+          padding-right: 25px;
+          height: 100%;
           }
         .cancellation {
           font-size: 14px;

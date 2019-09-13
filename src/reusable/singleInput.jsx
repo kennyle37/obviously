@@ -10,7 +10,7 @@ const SingleInput = ({ title, content, fontSize, cost, padding }) => {
       <p className="title">{title}</p>
       <div className="singleInput-info" style={{ 'font-size': `${fontSize}` }}>
         <p className="content">{content}</p>
-        <p className="price" style={{ 'display': `${hidden}` }}>{`${cost}/month`}</p>
+        <p className="price" style={{ 'display': `${hidden}` }}>{`$${cost}/month`}</p>
       </div>
       <style jsx>{`
         .singleInput-container {

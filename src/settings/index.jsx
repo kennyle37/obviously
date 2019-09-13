@@ -1,9 +1,11 @@
 import React from 'react';
 
 import Nav from '../nav/index';
-import SingleInput from './singleInput';
-import DoubleInput from './doubleInput';
+import SingleInput from '../reusable/singleInput';
+import DoubleInput from '../reusable/doubleInput';
 import MembershipInfo from './membershipInfo';
+import UserSeats from './userSeats';
+import Submit from '../reusable/submit';
 
 const SettingIndex = () => {
   return (
@@ -25,7 +27,9 @@ const SettingIndex = () => {
         <SingleInput title={"Expiration"} content={"10/22"}/>
         <DoubleInput title1={"CVV"} title2={"Zip"} content1={"240"} content2={"01002"}/>
         <MembershipInfo />
+        <UserSeats />
       </div>
+      <Submit />
       <style jsx>{`
         .setting-container {
           flex-grow: 100;
