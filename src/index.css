@@ -3,6 +3,7 @@
   --side-nav: #F5F5F5;
   --card-border: #EBEBEB;
   --submit: #657FFF;
+  --highlight: #32CD32;
 }
 
 html {
@@ -22,4 +23,14 @@ body {
 .subtitle {
   font-size: 18px;
   font-weight: 500;
+}
+
+.header {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+}
+.subheader {
+  font-size: 18px;
+  font-weight: 400;
 }

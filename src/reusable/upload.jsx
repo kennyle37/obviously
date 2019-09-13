@@ -1,34 +1,33 @@
 import React from 'react';
 
-const SmallButton = () => {
+const Upload = ({ name }) => {
   return (
-    <div className="smallButton-container">
-      <p className="smallButton">+</p>
+    <div className="submit">
+      <div className="submit-name">{name}</div>
       <style jsx>{`
-        .smallButton-container {
+        .submit {
           border: 1.5px solid var(--card-border);
           border-radius: 8px;
           box-shadow: 5px 6px 2px -4px var(--side-nav);
-          height: 110px;
-          margin-bottom: 10px;
-          text-align: center;
-          margin-left: 20px;
+          height: 90px;
+          background-color: var(--submit);
+          margin-bottom: 20px;
+          width: 400px;
         }
-        .smallButton {
-          width: 100px;
-          font-size: 50px;
-          font-weight: 900;
-          margin: 0;
+        .submit-name {
           position: relative;
           top: 50%;
           transform: translateY(-50%);
           text-align: center;
           vertical-align: middle;
           line-height: 90px;  
+          color: #fff;
+          font-size: 18px;
+          font-weight: 900;
         }
       `}</style>
     </div>
   )
 }
 
-export default SmallButton;
+export default Upload;

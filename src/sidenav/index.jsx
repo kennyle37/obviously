@@ -15,7 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Divider from './divider';
+import Divider from '../reusable/divider';
 import ProfileCard from './profileCard';
 
 const logo = require('../assets/images/logo.png');

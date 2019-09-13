@@ -1,17 +1,18 @@
 import React from 'react';
 
-const Submit = () => {
+const Submit = ({ name }) => {
   return (
     <div className="submit">
-      <div className="submit-name">Update All Settings</div>
+      <div className="submit-name">{name}</div>
       <style jsx>{`
         .submit {
           border: 1.5px solid var(--card-border);
           border-radius: 8px;
           box-shadow: 5px 6px 2px -4px var(--side-nav);
           height: 90px;
-          margin: 40px;
           background-color: var(--submit);
+          margin-top: 40px;
+          margin-bottom: 40px;
         }
         .submit-name {
           position: relative;
