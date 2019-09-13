@@ -6,7 +6,7 @@ import Submit from '../reusable/submit';
 import Upload from '../reusable/upload';
 import Divider2 from '../reusable/divider2';
 import Database from '../reusable/database';
-import SingleInput from '../reusable/singleInput';
+import DisplayInput from '../reusable/displayInput';
 
 const DataIndex = () => {
   return (
@@ -32,13 +32,13 @@ const DataIndex = () => {
           </div>
         </div>
         <div className="data-form">
-          <SingleInput title={"Display Name"} content={"Obviously AI PostgreSQL database"} />
-          <SingleInput title={"Description"} content={"Data base for quarterly sales stats."} columnStart="2" columnEnd="4" />
-          <SingleInput title={"Host"} content={"AWS"}  columnStart="1" columnEnd="3" />
-          <SingleInput title={"Port"} content={"3000"} />
-          <SingleInput title={"Username"} content={"Monica Greenleaf"} />
-          <SingleInput title={"Password"} content={"*********"} />
-          <SingleInput title={"Database"} content={"Production Database"} />
+          <DisplayInput title={"Display Name"} content={"Obviously AI PostgreSQL database"} />
+          <DisplayInput title={"Description"} content={"Data base for quarterly sales stats."} columnStart="2" columnEnd="4" />
+          <DisplayInput title={"Host"} content={"AWS"}  columnStart="1" columnEnd="3" />
+          <DisplayInput title={"Port"} content={"3000"} />
+          <DisplayInput title={"Username"} content={"Monica Greenleaf"} />
+          <DisplayInput title={"Password"} content={"*********"} />
+          <DisplayInput title={"Database"} content={"Production Database"} />
         </div>
         <Submit name="Add this database" />
       </div>

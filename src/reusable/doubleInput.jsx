@@ -1,15 +1,15 @@
 import React from 'react';
 
-const doubleInput = ({ title1, title2, content1, content2 }) => {
+const doubleInput = ({ title1, title2 }) => {
   return (
     <div className="doubleInput-container">
       <div className="doubleInput-one">
         <p className="doubleInput-title">{title1}</p>
-        <p className="doubleInput-info">{content1}</p>
+        <input className="doubleInput-info" />
       </div>
       <div className="doubleInput-two">
         <p className="doubleInput-title">{title2}</p>
-        <p className="doubleInput-info">{content2}</p>
+        <input className="doubleInput-info" />
       </div>
       <style jsx>{`
         .doubleInput-container {
