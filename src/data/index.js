@@ -44,7 +44,7 @@ class DataIndex extends Component {
             <Divider2 />
           </div>
           <p className="subheader">Connect a database</p>
-          <p className="data-subtitle">In order to ensure Obviously AI has aces to your database, please whitelist our IP address <span className="highlight">104.198.187.43</span> on your database firewall.</p>
+          <p className="subtitle">In order to ensure Obviously AI has aces to your database, please whitelist our IP address <span className="highlight">104.198.187.43</span> on your database firewall.</p>
           <div className="data-selection">
             <div className="data-grid">
               <Database icon={faDatabase} name="MySQL" />

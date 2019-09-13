@@ -12,12 +12,13 @@ const Nav = () => {
         .nav-container {
           display: flex;
           justify-content: flex-end;
-        }
-        .nav-icon {
-          margin: 30px;
+          font-family: var(--FontBold);
+          color: var(--gray);
+          font-size: 20px;
+          margin: 40px;
         }
         .nav-item {
-          margin: 30px;
+          margin-left: 30px;
         }
       `}</style>
     </div>

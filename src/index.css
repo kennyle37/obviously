@@ -1,9 +1,54 @@
+@font-face {
+  font-family: 'FontHead';
+  src: url('../src/assets/fonts/HammersmithOne-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Font';
+  src: url('../src/assets/fonts/Segoe511.TTF') format('truetype')
+}
+
+@font-face {
+  font-family: 'FontBold';
+  src: url('../src/assets/fonts/Segoe511Bold.TTF') format('truetype')
+}
+
+@font-face {
+  font-family: 'FontItalic';
+  src: url('../src/assets/fonts/Segoe511Italic.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'FontBoldItalic';
+  src: url('../src/assets/fonts/Segoe511BoldItalic.TTF') format('truetype')
+}
+
+@font-face {
+  font-family: 'FontLight';
+  src: url('../src/assets/fonts/Segoe500Light.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'FontLightItalic';
+  src: url('../src/assets/fonts/SegoeUI526LightItalic.ttf') format('truetype')
+}
+
+
 :root {
-  --main-color: black;
+  --main-color: #353e44;
+  --gray: #4f5c65;
   --side-nav: #F5F5F5;
   --card-border: #EBEBEB;
   --submit: #657FFF;
   --highlight: #32CD32;
+  --FontHead: 'FontBold';
+  --Font: 'Font';
+  --FontBold: 'FontBold';
+  --FontItalic: 'FontItalic';
+  --FontBoldItalic: 'FontBoldItalic';
+  --FontLight: 'FontLight';
+  --FontLightItalic: 'FontLightItalic';
+
 }
 
 html {
@@ -13,22 +58,26 @@ html {
 body {
   margin: 0px;
   min-height: 100vh;
+  font-family: 'Font', Fallback, sans-serif;
 }
 
 .title {
   font-weight: 900;
   font-size: 18px;
+  font-family: 'FontBold', Fallback, sans-serif;
 }
 
 .subtitle {
   font-size: 18px;
   font-weight: 500;
+  font-family: 'FontItalic', Fallback, sans-serif;
 }
 
 .header {
   font-size: 48px;
   font-weight: 900;
   margin: 0;
+  font-family: 'FontHead', Fallback, sans-serif;
 }
 .subheader {
   font-size: 18px;
