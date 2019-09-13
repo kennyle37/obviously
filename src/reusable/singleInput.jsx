@@ -1,12 +1,12 @@
 import React from 'react';
 
-const SingleInput = ({ title, content, fontSize, cost, padding }) => {
+const SingleInput = ({ title, content, fontSize, cost, padding, columnStart, columnEnd }) => {
   fontSize = fontSize === undefined ? '18px' : fontSize;
   padding = padding === undefined ? '25px' : padding;
   const hidden = cost === undefined ? 'none' : 'block';
 
   return (
-    <div className="singleInput-container" style={{ 'padding': `0 ${padding}`}}>
+    <div className="singleInput-container" style={{ 'padding': `0 ${padding}`, 'grid-column-start': columnStart, 'grid-column-end': columnEnd}}>
       <p className="title">{title}</p>
       <div className="singleInput-info" style={{ 'font-size': `${fontSize}` }}>
         <p className="content">{content}</p>

@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <div className="container">
         <Sidenav />
-        {/* <SettingIndex /> */}
-        <DataIndex />
+        <SettingIndex />
+        {/* <DataIndex /> */}
         <style jsx>{`
           .container {
             display: flex;

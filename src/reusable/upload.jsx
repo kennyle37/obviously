@@ -2,10 +2,10 @@ import React from 'react';
 
 const Upload = ({ name }) => {
   return (
-    <div className="submit">
-      <div className="submit-name">{name}</div>
+    <div className="upload">
+      <div className="upload-name">{name}</div>
       <style jsx>{`
-        .submit {
+        .upload {
           border: 1.5px solid var(--card-border);
           border-radius: 8px;
           box-shadow: 5px 6px 2px -4px var(--side-nav);
@@ -14,7 +14,7 @@ const Upload = ({ name }) => {
           margin-bottom: 20px;
           width: 400px;
         }
-        .submit-name {
+        .upload-name {
           position: relative;
           top: 50%;
           transform: translateY(-50%);

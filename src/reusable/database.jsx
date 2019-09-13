@@ -15,7 +15,7 @@ const Database = ({ icon, name }) => {
           border-radius: 8px;
           box-shadow: 5px 6px 2px -4px var(--side-nav);
           height: 110px;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
           text-align: center;
           height: 200px;
         }
