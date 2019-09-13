@@ -13,7 +13,7 @@ class SettingIndex extends Component {
     company: '',
     email: '',
     currentPW: '',
-    newPW: '',
+    newPW: 'u',
     repeatNewPW: '',
     cardNum: null,
     exp: null,
@@ -25,6 +25,10 @@ class SettingIndex extends Component {
     this.setState({
       [e.name]: e.value
     })
+  }
+
+  handleClick = () => {
+    console.log('User information updated!', JSON.stringify(this.state));
   }
 
   render() {
@@ -46,11 +50,11 @@ class SettingIndex extends Component {
             <SingleInput title={"Repeat New Password"} name={"repeatNewPW"} password onChange={this.handleChange} />
             <SingleInput title={"Card Number"} name={"cardNum"} onChange={this.handleChange} />
             <SingleInput title={"Expiration"} name={"exp"} onChange={this.handleChange} />
-            <DoubleInput title1={"CVV"} title2={"Zip"} content1={"240"} content2={"01002"}/>
+            <DoubleInput title1={"CVV"} name1={"cvv"} title2={"Zip"} name2={"zip"} onChange={this.handleChange} />
             <MembershipInfo />
-            <UserSeats />
+            <UserSeats handleChange={this.handleChange} />
           </div>
-          <Submit name="Update All Settings" />
+          <Submit name="Update All Settings" handleClick={this.handleClick}/>
         </div>
         <style jsx>{`
           .setting-container {

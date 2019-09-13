@@ -1,8 +1,8 @@
 import React from 'react';
 
-const SmallButton = () => {
+const SmallButton = ({ handleClick }) => {
   return (
-    <div className="smallButton-container">
+    <div className="smallButton-container" onClick={handleClick}>
       <p className="smallButton">+</p>
       <style jsx>{`
         .smallButton-container {

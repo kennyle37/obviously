@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Submit = ({ name }) => {
+const Submit = ({ handleClick, name }) => {
   return (
-    <div className="submit">
+    <div className="submit" onClick={handleClick}>
       <div className="submit-name">{name}</div>
       <style jsx>{`
         .submit {
