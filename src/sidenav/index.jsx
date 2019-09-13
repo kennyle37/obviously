@@ -1,5 +1,6 @@
 import React from 'react';
 import '../index.css'
+import { BrowserRouter as Route, Link } from 'react-router-dom';
 
 import { 
   faBinoculars, 
@@ -11,7 +12,6 @@ import {
   faFileCsv, 
   faPlusCircle, 
   faToggleOn, 
-  faToggleOff,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -34,18 +34,22 @@ const Sidenav = () => {
           Explore
         </span>
       </div>
-      <div className="sidenav-card">
-        <FontAwesomeIcon className="sidenav-icon" icon={faBook} fixedWidth />
-        <span>
-          Definitions       
-        </span>
-      </div>
-      <div className="sidenav-card">
-        <FontAwesomeIcon width="100" className="sidenav-icon" icon={faCog} fixedWidth />
-        <span>
-          Settings
-        </span>
-      </div>
+      <Link to="/database/">
+        <div className="sidenav-card">
+          <FontAwesomeIcon className="sidenav-icon" icon={faBook} fixedWidth />
+          <span>
+            Definitions       
+          </span>
+        </div>
+      </Link>
+      <Link to="/settings/">
+        <div className="sidenav-card">
+          <FontAwesomeIcon width="100" className="sidenav-icon" icon={faCog} fixedWidth />
+          <span>
+            Settings
+          </span>
+        </div>
+      </Link>
       <div className="sidenav-card">
         <FontAwesomeIcon className="sidenav-icon" icon={faQuestion} fixedWidth />
         <span>
