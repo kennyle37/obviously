@@ -29,7 +29,7 @@ const ExistingUserCard = ({ title, content }) => {
           border-radius: 8px;
           box-shadow: 5px 6px 2px -4px var(--side-nav);
           height: 90px;
-          width: 350px;
+          
           margin-bottom: 10px;
           display: flex;
           justify-content: space-between;

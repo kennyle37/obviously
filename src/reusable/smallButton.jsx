@@ -13,6 +13,7 @@ const SmallButton = ({ handleClick }) => {
           margin-bottom: 10px;
           text-align: center;
           margin-left: 20px;
+          cursor: pointer;
         }
         .smallButton {
           width: 100px;

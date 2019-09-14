@@ -26,7 +26,7 @@ class doubleInput extends Component {
             border: 1.5px solid var(--card-border);
             border-radius: 8px;
             box-shadow: 5px 6px 2px -4px var(--side-nav);
-            padding-left: 25px;
+            padding-left: 18px;
             height: 110px;
             margin-right: 10px;
             width: 50%;
@@ -35,7 +35,7 @@ class doubleInput extends Component {
             border: 1.5px solid var(--card-border);
             border-radius: 8px;
             box-shadow: 5px 6px 2px -4px var(--side-nav);
-            padding-left: 25px;
+            padding-left: 18px;
             height: 110px;
             width: 50%;
           }

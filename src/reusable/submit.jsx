@@ -13,6 +13,7 @@ const Submit = ({ handleClick, name }) => {
           background-color: var(--submit);
           margin-top: 40px;
           margin-bottom: 40px;
+          cursor: pointer;
         }
         .submit-name {
           position: relative;

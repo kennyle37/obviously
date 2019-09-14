@@ -8,7 +8,7 @@ class SingleInput extends Component {
   render() {
     let { title, fontSize, padding, columnStart, columnEnd, password, value, name, placeholder } = this.props;
     fontSize = fontSize === undefined ? '18px' : fontSize;
-    padding = padding === undefined ? '25px' : padding;
+    padding = padding === undefined ? '15px' : padding;
     password = password === undefined ? 'input' : 'password';
   
     return (

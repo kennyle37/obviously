@@ -26,8 +26,8 @@ class UserSeats extends Component {
         <p>Invite another user from your company to Obviously AI.</p>
         <div className="userSeats-invite-container">
           <div className="userSeats-invite">
-            <SingleInput title="Name" name="name" onChange={this.handleChange} />
-            <SingleInput title="Email" name="email" onChange={this.handleChange} />
+            <SingleInput title="Name" name="name" onChange={this.handleChange} placeholder={"Dwayne 'The Rock' Johnson"}/>
+            <SingleInput title="Email" name="email" onChange={this.handleChange} placeholder="mypetrock@wwf.com"/>
           </div>
           <SmallButton handleClick={this.handleClick} />
         </div>
@@ -35,7 +35,7 @@ class UserSeats extends Component {
         <p className="subtitle">Existing Users</p>
         <div className="userSeats-offset">
           <div className="userSeats-existingUsers-container ">
-            <ExistingUserCard title="Monica Greenleaf" content="Monica Greenleaf@microsoft.com"/>
+            <ExistingUserCard title="Monica Greenleaf" content="Monica.Greenleaf@microsoft.com"/>
             <ExistingUserCard title="John Wick" content="John.wick@microsoft.com"/>
             <ExistingUserCard title="Tom Cruise" content="Tom.Cruise@microsoft.com"/>
             <ExistingUserCard title="Emma Stone" content="emmastone@microsoft.com"/>
@@ -71,6 +71,7 @@ class UserSeats extends Component {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 10px;
+            width: fit-content;
           }
         `}</style>
       </div>

@@ -13,6 +13,7 @@ const Upload = ({ name }) => {
           background-color: var(--submit);
           margin-bottom: 20px;
           width: 400px;
+          cursor: pointer;
         }
         .upload-name {
           position: relative;

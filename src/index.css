@@ -69,10 +69,23 @@ body {
   margin-bottom: 10px;
 }
 
+.alt-title {
+  font-size: 18px;
+  font-weight: 550;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: 'Font', Fallback, sans-serif;
+}
+
 .subtitle {
   font-size: 18px;
   font-weight: 500;
   font-family: 'FontItalic', Fallback, sans-serif;
+}
+
+.description {
+  font-size: 14px;
+  font-family: 'Font', Fallback, sans-serif;
 }
 
 .header {

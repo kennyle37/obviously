@@ -30,7 +30,7 @@ const DisplayInput = ({ title, content, fontSize, cost, padding, columnStart, co
         }
         .price {
           margin: 0;
-          padding-top: 10px;
+          font-size: 15px;
         }
       `}</style>
     </div>
