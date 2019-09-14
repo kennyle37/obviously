@@ -6,7 +6,7 @@ class SingleInput extends Component {
   }
 
   render() {
-    let { title, fontSize, padding, columnStart, columnEnd, password, value, name } = this.props;
+    let { title, fontSize, padding, columnStart, columnEnd, password, value, name, placeholder } = this.props;
     fontSize = fontSize === undefined ? '18px' : fontSize;
     padding = padding === undefined ? '25px' : padding;
     password = password === undefined ? 'input' : 'password';
@@ -15,23 +15,30 @@ class SingleInput extends Component {
       <div className="singleInput-container" style={{ 'padding': `0 ${padding}`, 'grid-column-start': columnStart, 'grid-column-end': columnEnd}}>
         <p className="title">{title}</p>
         <div className="singleInput-info" style={{ 'font-size': `${fontSize}` }}>
-          <input type={password} className="content" name={name} value={value} onChange={this.handleChange}></input>
+          <input type={password} className="input-content" name={name} value={value} onChange={this.handleChange} placeholder={placeholder} style={{ 'width': '100%' }} />
         </div>
         <style jsx>{`
           .singleInput-container {
             border: 1.5px solid var(--card-border);
             border-radius: 8px;
-            box-shadow: 5px 6px 2px -4px var(--side-nav);
+            box-shadow: 5px 6px 3px -5px var(--white);
             height: 110px;
             margin-bottom: 10px;
+            background-color: var(--white);
           }
           .singleInput-info {
             display: flex;
             justify-content: space-between;
           }
-          .content {
+          .input-content {
             margin: 0;
             padding-top: 10px;
+            border-width:0px;
+            border:none;
+            font-size: 16px;
+          }
+          textarea:focus, input:focus{
+          outline: none;
           }
         `}</style>
       </div>

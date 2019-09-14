@@ -35,10 +35,11 @@
 
 
 :root {
-  --main-color: #353e44;
+  --main-color: #3C3C3C;
   --gray: #4f5c65;
   --side-nav: #F5F5F5;
   --card-border: #EBEBEB;
+  --white: #fff;
   --submit: #657FFF;
   --highlight: #32CD32;
   --FontHead: 'FontBold';
@@ -63,8 +64,9 @@ body {
 
 .title {
   font-weight: 900;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'FontBold', Fallback, sans-serif;
+  margin-bottom: 10px;
 }
 
 .subtitle {
@@ -78,8 +80,12 @@ body {
   font-weight: 900;
   margin: 0;
   font-family: 'FontHead', Fallback, sans-serif;
+  letter-spacing: 2px;
 }
 .subheader {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-family: 'Font', Fallback, sans-serif;
 }

@@ -6,20 +6,21 @@ class doubleInput extends Component {
   }
 
   render() {
-    const { title1, title2, name1, name2 } = this.props;
+    const { title1, title2, name1, name2, placeholder1, placeholder2 } = this.props;
     return (
       <div className="doubleInput-container">
         <div className="doubleInput-one">
-          <p className="doubleInput-title">{title1}</p>
-          <input className="doubleInput-info" name={name1} onChange={this.handleChange} />
+          <p className="title">{title1}</p>
+          <input className="input-content" name={name1} onChange={this.handleChange} placeholder={placeholder1} />
         </div>
         <div className="doubleInput-two">
-          <p className="doubleInput-title">{title2}</p>
-          <input className="doubleInput-info" name={name2} onChange={this.handleChange} />
+          <p className="title">{title2}</p>
+          <input className="input-content" name={name2} onChange={this.handleChange} placeholder={placeholder2} />
         </div>
         <style jsx>{`
           .doubleInput-container {
             display: flex;
+            background-color: var(--white);
           }
           .doubleInput-one {
             border: 1.5px solid var(--card-border);
@@ -37,14 +38,6 @@ class doubleInput extends Component {
             padding-left: 25px;
             height: 110px;
             width: 50%;
-          }
-          .doubleInput-title {
-            font-weight: 900;
-            font-size: 18px;
-          }
-          .doubleInput-info {
-            font-size: 18px;
-            padding-top: 10px;
           }
         `}</style>
       </div>

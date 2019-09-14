@@ -10,6 +10,8 @@ import Divider2 from '../reusable/divider2';
 import Database from '../reusable/database';
 import DisplayInput from '../reusable/displayInput';
 
+const background = require('../assets/images/group2.svg');
+
 class DataIndex extends Component {
   handleUpload = files => {
     const name = files[0].name;
@@ -66,9 +68,13 @@ class DataIndex extends Component {
         <style>{`
           .data-container {
             flex-grow: 100;
+            background: url(${background});
+            background-repeat: no-repeat;
+            background-position: right top;
           }
           .data-page {
             margin: 40px;
+            margin-top: 200px
           }
           .highlight {
             font-weight: 900;
