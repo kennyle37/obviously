@@ -20,12 +20,12 @@ class doubleInput extends Component {
         <style jsx>{`
           .doubleInput-container {
             display: flex;
-            background-color: var(--white);
           }
           .doubleInput-one {
             border: 1.5px solid var(--card-border);
             border-radius: 8px;
             box-shadow: 5px 6px 2px -4px var(--side-nav);
+            background-color: var(--white);
             padding-left: 18px;
             height: 110px;
             margin-right: 10px;
@@ -36,6 +36,7 @@ class doubleInput extends Component {
             border-radius: 8px;
             box-shadow: 5px 6px 2px -4px var(--side-nav);
             padding-left: 18px;
+            background-color: var(--white);
             height: 110px;
             width: 50%;
           }

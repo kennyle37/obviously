@@ -59,22 +59,39 @@ class SettingIndex extends Component {
           <Submit name="Update All Settings" handleClick={this.handleClick}/>
         </div>
         <style jsx>{`
-          .setting-container {
-            flex-grow: 100;
-            background: url(${background});
-            background-repeat: no-repeat;
-            background-position: right top;
+          @media (min-width:961px)  { 
+            .setting-container {
+              flex-grow: 100;
+              background: url(${background});
+              background-repeat: no-repeat;
+              background-position: right top;
+              background-size: 1000px;
+            }
+            .setting-page {
+              margin: 10px;
+            }
+            .setting-form {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-auto-columns: 1fr;
+              grid-gap: 5px;
+            }
+            .setting-header {
+              margin-top: 200px;
+            }
           }
-          .setting-page {
-            margin: 40px;
+          @media (min-width:1025px) { 
+            .setting-container {
+              background-size: 1100px;
+            }
           }
-          .setting-form {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
-          }
-          .setting-header {
-            margin-top: 200px;
+          @media (min-width:1281px) { 
+            .setting-container {
+              background-size: auto;
+            }
+            .setting-page {
+              margin: 40px;
+            }
           }
         `}</style>
       </div>

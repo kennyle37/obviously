@@ -36,7 +36,7 @@ class SideNav extends Component {
     return (
       <div className="sidenav-container">
         <div className="sidenav-card-header">
-          <img src={logo} alt="obviously" style={{ height: '40px' }} />
+          <img className="company-logo" src={logo} alt="obviously" style={{ height: '40px' }} />
           <FontAwesomeIcon className="sidenav-end-icon right" icon={faToggleOn} fixedWidth/>
         </div>
         <ProfileCard />
@@ -123,36 +123,80 @@ class SideNav extends Component {
           Show all
         </div>
         <style jsx>{`
-        .sidenav-container {
-          background-color: var(--side-nav);
-          padding: 40px;
-          font-family: var(--FontLight);
-          font-size: 18px;
-          color: var(--gray);
-          font-weight: 600;
+        @media (min-width:961px)  { 
+          .sidenav-container {
+            background-color: var(--side-nav);
+            padding: 20px;
+            font-family: var(--FontLight);
+            font-size: 16px;
+            color: var(--gray);
+            font-weight: 600;
+          }
+          .company-logo {
+            width: 150px
+          }
+          .sidenav-card {
+            display: flex;
+            margin-bottom: 30px;
+          }
+          .sidenav-icon {
+            margin-right: 10px;
+            width: 15px;
+          }
+          .sidenav-card-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+          }
+          .expand {
+            font-size: 14px;
+            margin-bottom: 30px;
+          }
+          .active {
+            font-family: var(--FontBold);
+          }
+          .link-name {
+            margin: 0;
+          }
         }
-        .sidenav-card {
-          display: flex;
-          margin-bottom: 30px;
+        @media (min-width:1025px) { 
+
         }
-        .sidenav-icon {
-          margin-right: 10px;
-          width: 15px;
+        @media (min-width:1281px) { 
+
         }
-        .sidenav-card-header {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 30px;
-        }
-        .expand {
-          font-size: 14px;
-          margin-bottom: 30px;
-        }
-        .active {
-          font-family: var(--FontBold);
-        }
-        .link-name {
-          margin: 0;
+        @media (min-width:1600px) { 
+          .sidenav-container {
+            background-color: var(--side-nav);
+            padding: 40px;
+            font-family: var(--FontLight);
+            font-size: 18px;
+            color: var(--gray);
+            font-weight: 600;
+          }
+          .sidenav-card {
+            display: flex;
+            margin-bottom: 30px;
+          }
+          .sidenav-icon {
+            margin-right: 10px;
+            width: 15px;
+          }
+          .sidenav-card-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+          }
+          .expand {
+            font-size: 14px;
+            margin-bottom: 30px;
+          }
+          .active {
+            font-family: var(--FontBold);
+          }
+          .link-name {
+            margin: 0;
+          }
         }
         `}</style>
       </div>

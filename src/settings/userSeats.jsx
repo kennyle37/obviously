@@ -44,35 +44,85 @@ class UserSeats extends Component {
   
         <p>You have 1 of 5 free seats left. Your card will be charged $10 /mo for each additional users.</p>
         <style jsx>{`
-          .userSeats-container {
-            grid-column-start: 2; 
-            grid-column-end: 4; 
-            border: 1.5px solid var(--card-border);
-            border-radius: 8px;
-            box-shadow: 5px 6px 2px -4px var(--side-nav);
-            padding-left: 25px;
-            padding-right: 25px;
-            height: 100%;
+          @media (min-width:961px)  { 
+            .userSeats-container {
+              grid-column-start: 2; 
+              grid-column-end: 4; 
+              border: 1.5px solid var(--card-border);
+              border-radius: 8px;
+              box-shadow: 5px 6px 2px -4px var(--side-nav);
+              padding-left: 15px;
+              padding-right: 15px;
+              height: 100%;
+              background-color: var(--white)
+            }
+            .userSeats-invite {
+              display: grid;
+              grid-auto-columns: 1fr;
+              grid-auto-flow: column;
+              grid-gap: 10px;
+              width: 100%;
+            }
+            .userSeats-offset {
+              display: flex;
+            }
+            .userSeats-invite-container {
+              display: flex;
+            }
+            .userSeats-existingUsers-container {
+              display: grid;
+              grid-template-columns: repeat(1, 1fr);
+              grid-gap: 10px;
+              width: fit-content;
+            }
           }
-          .userSeats-invite {
-            display: grid;
-            grid-auto-columns: 1fr;
-            grid-auto-flow: column;
-            grid-gap: 10px;
-            width: 100%;
+          @media (min-width:1025px) { 
+
           }
-          .userSeats-offset {
-            display: flex;
+          @media (min-width:1281px) { 
+
           }
-          .userSeats-invite-container {
-            display: flex;
+          @media (min-width:1435px) { 
+            .userSeats-existingUsers-container {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 10px;
+              width: fit-content;
+            }
           }
-          .userSeats-existingUsers-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            width: fit-content;
+          @media (min-width:1600px) { 
+            .userSeats-container {
+              grid-column-start: 2; 
+              grid-column-end: 4; 
+              border: 1.5px solid var(--card-border);
+              border-radius: 8px;
+              box-shadow: 5px 6px 2px -4px var(--side-nav);
+              padding-left: 25px;
+              padding-right: 25px;
+              height: 100%;
+              background-color: var(--white)
+            }
+            .userSeats-invite {
+              display: grid;
+              grid-auto-columns: 1fr;
+              grid-auto-flow: column;
+              grid-gap: 10px;
+              width: 100%;
+            }
+            .userSeats-offset {
+              display: flex;
+            }
+            .userSeats-invite-container {
+              display: flex;
+            }
+            .userSeats-existingUsers-container {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 10px;
+              width: fit-content;
+            }
           }
+
         `}</style>
       </div>
     )

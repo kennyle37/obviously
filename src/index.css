@@ -106,3 +106,36 @@ body {
   font-weight: 500;
   font-family: 'Font', Fallback, sans-serif;
 }
+
+@media (min-width:961px)  { 
+  .title {
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'FontBold', Fallback, sans-serif;
+    margin-bottom: 0px;
+    margin-top: 28px;
+  }
+  .header {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0;
+    font-family: 'FontHead', Fallback, sans-serif;
+    letter-spacing: 2px;
+  }
+  .subheader {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-family: 'Font', Fallback, sans-serif;
+  }
+}
+@media (min-width:1025px) { 
+
+}
+@media (min-width:1281px) { 
+
+}
+@media (min-width:1600px) { 
+
+}

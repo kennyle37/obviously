@@ -14,31 +14,49 @@ class SingleInput extends Component {
     return (
       <div className="singleInput-container" style={{ 'padding': `0 ${padding}`, 'gridColumnStart': columnStart, 'gridColumnEnd': columnEnd}}>
         <p className="title">{title}</p>
-        <div className="singleInput-info" style={{ 'fontSize': `${fontSize}` }}>
-          <input type={password} className="input-content" name={name} value={value} onChange={this.handleChange} placeholder={placeholder} style={{ 'width': '100%' }} />
-      </div>
+        <input className="input-content" type={password} style={{ 'fontSize': `${fontSize}` }} name={name} value={value} onChange={this.handleChange} placeholder={placeholder} />
         <style jsx>{`
-          .singleInput-container {
-            border: 1.5px solid var(--card-border);
-            border-radius: 8px;
-            box-shadow: 5px 6px 3px -5px var(--white);
-            height: 110px;
-            margin-bottom: 10px;
-            background-color: var(--white);
+          @media (min-width:961px) { 
+            .singleInput-container {
+              border: 1.5px solid var(--card-border);
+              border-radius: 8px;
+              box-shadow: 5px 6px 3px -5px var(--white);
+              height: 110px;
+              margin-bottom: 10px;
+              background-color: var(--white);
+            }
+            .input-content {
+              margin: 0;
+              padding-top: 10px;
+              border-width:0px;
+              border:none;
+              font-size: 16px !important;
+              width: 100%;
+            }
           }
-          .singleInput-info {
-            display: flex;
-            justify-content: space-between;
+
+          @media (min-width:1025px) { 
+
           }
-          .input-content {
-            margin: 0;
-            padding-top: 10px;
-            border-width:0px;
-            border:none;
-            font-size: 16px;
+          @media (min-width:1281px) { 
+
           }
-          textarea:focus, input:focus{
-          outline: none;
+          @media (min-width:1600px) { 
+            .singleInput-container {
+              border: 1.5px solid var(--card-border);
+              border-radius: 8px;
+              box-shadow: 5px 6px 3px -5px var(--white);
+              height: 110px;
+              margin-bottom: 10px;
+              background-color: var(--white);
+            }
+            .input-content {
+              margin: 0;
+              padding-top: 10px;
+              border-width:0px;
+              border:none;
+              font-size: 16px;
+            }
           }
         `}</style>
       </div>
