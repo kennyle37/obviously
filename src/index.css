@@ -50,7 +50,10 @@
   --FontBoldItalic: 'FontBoldItalic';
   --FontLight: 'FontLight';
   --FontLightItalic: 'FontLightItalic';
-
+  --large-desktop: 1600px;
+  --small-desktop: 1200px;
+  --tablet: 800px;
+  --phone: 320px;
 }
 
 html {

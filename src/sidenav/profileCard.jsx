@@ -11,7 +11,7 @@ const ProfileCard = () => {
       </div>
       <div className="profile-info">
         <div className="info">Monica Greenleaf</div>
-        <div className="info">Microsoft Inc.</div>
+        <div className="info-description">Microsoft Inc.</div>
       </div>
       <img src={ribbon} alt="ribbon"/>
 
@@ -27,11 +27,13 @@ const ProfileCard = () => {
           margin: 12px 20px 20px 20px;
         }
         .profile-info {
-          margin-top: 12px;
+          margin: auto 0;
           width: 100%;
+          font-size: 16px;
         }
-        .info {
-          padding-top: 8px;
+        .info-description {
+          font-family: var(--FontItalic);
+          font-weight: 400;
         }
       `}
       </style>
