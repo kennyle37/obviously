@@ -1,8 +1,9 @@
 import React from 'react';
+import classNames from 'classnames';
 import { faTimes, faUserShield } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const ExistingUserCard = ({ title, content }) => {
+const ExistingUserCard = ({ title, content, privileged, remove }) => {
   return (
     <div className="existing-container">
       <div className="existing-info">
@@ -11,13 +12,13 @@ const ExistingUserCard = ({ title, content }) => {
       </div>
       <div className="existing-action">
         <div className="action-container">
-          <div className="icon">
+          <div className={classNames({'icon': true}, { 'privileged': privileged })}>
             <FontAwesomeIcon icon={faUserShield} />
         </div>
           <p className="action-item">Admin</p>
         </div>
         <div className="action-container">
-          <div className="icon">
+          <div className={classNames({'icon': true}, { 'remove': remove })}>
             <FontAwesomeIcon icon={faTimes} />
           </div>
           <p className="action-item">Remove</p>
@@ -57,6 +58,13 @@ const ExistingUserCard = ({ title, content }) => {
         }
         .icon {
           display: inline-block;
+          cursor: pointer;
+        }
+        .privileged {
+          color: var(--highlight)
+        }
+        .remove {
+          color: var(--error)
         }
       `}</style>
     </div>

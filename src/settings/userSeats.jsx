@@ -35,10 +35,10 @@ class UserSeats extends Component {
         <p className="subtitle">Existing Users</p>
         <div className="userSeats-offset">
           <div className="userSeats-existingUsers-container ">
-            <ExistingUserCard title="Monica Greenleaf" content="Monica.Greenleaf@microsoft.com"/>
-            <ExistingUserCard title="John Wick" content="John.wick@microsoft.com"/>
-            <ExistingUserCard title="Tom Cruise" content="Tom.Cruise@microsoft.com"/>
-            <ExistingUserCard title="Emma Stone" content="emmastone@microsoft.com"/>
+            <ExistingUserCard title="Monica Greenleaf" content="Monica.Greenleaf@microsoft.com" privileged/>
+            <ExistingUserCard title="John Wick" content="John.wick@microsoft.com" privileged remove/>
+            <ExistingUserCard title="Tom Cruise" content="Tom.Cruise@microsoft.com" remove/>
+            <ExistingUserCard title="Emma Stone" content="emmastone@microsoft.com" remove/>
           </div>
         </div>
   

@@ -16,7 +16,9 @@ class DataIndex extends Component {
   state = {
     hasFile: false,
     name: '',
+    dbName: 'MySQL',
   }
+
   handleUpload = files => {
     const name = files[0].name;
     const type = name.slice(name.length-4);
@@ -41,7 +43,15 @@ class DataIndex extends Component {
     }
   }
 
+  handleClick = val => {
+    this.setState({
+      dbName: val
+    })
+  }
+
   render() {
+    const { dbName } = this.state;
+
     return (
       <div className="data-container">
         <Nav />
@@ -63,8 +73,12 @@ class DataIndex extends Component {
           <p className="subtitle">In order to ensure Obviously AI has aces to your database, please whitelist our IP address <span className="highlight">104.198.187.43</span> on your database firewall.</p>
           <div className="data-selection">
             <div className="data-grid">
-              <Database icon={faDatabase} name="MySQL" />
-              <Database icon={faDatabase} name="PostgreSQL" />
+              <div onClick={() => this.handleClick('MySQL')}>
+                <Database handleClick={this.handleClick} icon={faDatabase} name="MySQL" current={dbName} />
+              </div>
+              <div onClick={() => this.handleClick('PostgreSQL')}>
+                <Database handleClick={this.handleClick} icon={faDatabase} name="PostgreSQL" current={dbName} />
+              </div>
             </div>
           </div>
           <div className="data-form">

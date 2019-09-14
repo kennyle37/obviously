@@ -125,7 +125,6 @@ class SideNav extends Component {
         <style jsx>{`
         .sidenav-container {
           background-color: var(--side-nav);
-          width: 400px;
           padding: 40px;
           font-family: var(--FontLight);
           font-size: 18px;
