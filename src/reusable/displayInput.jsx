@@ -13,66 +13,59 @@ const DisplayInput = ({ title, content, fontSize, cost, padding, columnStart, co
         <p className="price" style={{ 'display': `${hidden}` }}>{`$${cost}/month`}</p>
       </div>
         <style jsx>{`
-        @media (min-width:961px)  {
-          .display-title {
-            margin-top: 8px;
-            font-size: 16px;
+          @media (min-width:961px)  {
+            .display-title {
+              margin-top: 8px;
+              font-size: 16px;
+            }
+            .displayInput-container {
+              border: 1.5px solid var(--card-border);
+              border-radius: 8px;
+              box-shadow: 5px 6px 2px -4px var(--side-nav);
+              height: 110px;
+              margin-bottom: 10px;
+            }
+            .displayInput-info {
+              display: flex;
+              justify-content: space-between;
+            }
+            .content {
+              margin: 0;
+              padding-top: 10px;
+              font-size: 12px;
+            }
+            .price {
+              margin: 0;
+              font-size: 12px;
+              word-break: break-word;
+              padding-left: 10px;
+            }
           }
-          .displayInput-container {
-            border: 1.5px solid var(--card-border);
-            border-radius: 8px;
-            box-shadow: 5px 6px 2px -4px var(--side-nav);
-            height: 110px;
-            margin-bottom: 10px;
+          @media (min-width:1600px) { 
+            .display-title {
+              margin-top: 28px;
+              font-size: 18px;
+            }
+            .displayInput-container {
+              border: 1.5px solid var(--card-border);
+              border-radius: 8px;
+              box-shadow: 5px 6px 2px -4px var(--side-nav);
+              height: 110px;
+              margin-bottom: 10px;
+            }
+            .displayInput-info {
+              display: flex;
+              justify-content: space-between;
+            }
+            .content {
+              margin: 0;
+              padding-top: 10px;
+            }
+            .price {
+              margin: 0;
+              font-size: 15px;
+            }
           }
-          .displayInput-info {
-            display: flex;
-            justify-content: space-between;
-          }
-          .content {
-            margin: 0;
-            padding-top: 10px;
-            font-size: 12px;
-          }
-          .price {
-            margin: 0;
-            font-size: 12px;
-            word-break: break-word;
-            padding-left: 10px;
-          }
-        }
-        @media (min-width:1025px) { 
-
-        }
-        @media (min-width:1281px) { 
-
-        }
-        @media (min-width:1600px) { 
-          .display-title {
-            margin-top: 28px;
-            font-size: 18px;
-          }
-          .displayInput-container {
-            border: 1.5px solid var(--card-border);
-            border-radius: 8px;
-            box-shadow: 5px 6px 2px -4px var(--side-nav);
-            height: 110px;
-            margin-bottom: 10px;
-          }
-          .displayInput-info {
-            display: flex;
-            justify-content: space-between;
-          }
-          .content {
-            margin: 0;
-            padding-top: 10px;
-          }
-          .price {
-            margin: 0;
-            font-size: 15px;
-          }
-        }
-
       `}</style>
     </div>
   )

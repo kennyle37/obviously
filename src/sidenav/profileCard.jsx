@@ -8,7 +8,7 @@ const ProfileCard = () => {
     <div className="profile-container">
       <div className="profile-pic-container">
         <img className="profile-pic" src={profile} alt="profile"/>
-      </div>
+    </div>
       <div className="profile-info">
         <div className="info">Monica Greenleaf</div>
         <div className="info-description">Microsoft Inc.</div>
@@ -41,12 +41,6 @@ const ProfileCard = () => {
           .ribbon {
             height: 60px;
           }
-        }
-        @media (min-width:1025px) { 
-
-        }
-        @media (min-width:1281px) { 
-
         }
         @media (min-width:1600px) { 
           .profile-container {

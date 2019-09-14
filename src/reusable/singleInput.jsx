@@ -34,13 +34,6 @@ class SingleInput extends Component {
               width: 100%;
             }
           }
-
-          @media (min-width:1025px) { 
-
-          }
-          @media (min-width:1281px) { 
-
-          }
           @media (min-width:1600px) { 
             .singleInput-container {
               border: 1.5px solid var(--card-border);

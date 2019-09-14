@@ -22,12 +22,6 @@ const Nav = () => {
             margin-left: 30px;
           }
         }
-        @media (min-width:1025px) { 
-
-        }
-        @media (min-width:1281px) { 
-
-        }
         @media (min-width:1600px) { 
           .nav-container {
             display: flex;

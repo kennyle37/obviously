@@ -128,14 +128,6 @@ body {
     margin-bottom: 50px;
     font-weight: 500;
     font-family: 'Font', Fallback, sans-serif;
+    margin-bottom: 30px;
   }
-}
-@media (min-width:1025px) { 
-
-}
-@media (min-width:1281px) { 
-
-}
-@media (min-width:1600px) { 
-
 }

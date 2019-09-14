@@ -159,12 +159,6 @@ class SideNav extends Component {
             margin: 0;
           }
         }
-        @media (min-width:1025px) { 
-
-        }
-        @media (min-width:1281px) { 
-
-        }
         @media (min-width:1600px) { 
           .sidenav-container {
             background-color: var(--side-nav);

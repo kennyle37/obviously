@@ -94,38 +94,76 @@ class DataIndex extends Component {
         </div>
   
         <style jsx>{`
-          .data-container {
-            flex-grow: 100;
-            background: url(${background});
-            background-repeat: no-repeat;
-            background-position: right top;
+          @media (min-width:961px)  { 
+            .data-container {
+              flex-grow: 100;
+              background: url(${background});
+              background-repeat: no-repeat;
+              background-position: right top;
+              background-size: 900px;
+            }
+            .data-page {
+              margin: 10px;
+              margin-top: 200px
+            }
+            .highlight {
+              font-weight: 900;
+              color: var(--highlight);
+            }
+            .data-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 10px;
+            }
+            .data-selection {
+              width: 550px;
+            }
+            .data-form {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 10px;
+            }
+            .react-file-reader-button {
+              width: 400px;
+            }
+            .file-upload {
+              margin: 0;
+            }
           }
-          .data-page {
-            margin: 40px;
-            margin-top: 200px
-          }
-          .highlight {
-            font-weight: 900;
-            color: var(--highlight);
-          }
-          .data-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-          }
-          .data-selection {
-            width: 550px;
-          }
-          .data-form {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
-          }
-          .react-file-reader-button {
-            width: 400px;
-          }
-          .file-upload {
-            margin: 0;
+          @media (min-width:1600px) { 
+            .data-container {
+              flex-grow: 100;
+              background: url(${background});
+              background-repeat: no-repeat;
+              background-position: right top;
+            }
+            .data-page {
+              margin: 40px;
+              margin-top: 200px
+            }
+            .highlight {
+              font-weight: 900;
+              color: var(--highlight);
+            }
+            .data-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-gap: 10px;
+            }
+            .data-selection {
+              width: 550px;
+            }
+            .data-form {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-gap: 10px;
+            }
+            .react-file-reader-button {
+              width: 400px;
+            }
+            .file-upload {
+              margin: 0;
+            }
           }
         `}</style>
       </div>

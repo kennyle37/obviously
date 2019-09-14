@@ -13,7 +13,6 @@ class Database extends Component {
           <FontAwesomeIcon icon={icon} size="5x"/>
           <p className="database-name">{name}</p>
         </div>
-  
         <style jsx>{`
           .database-container {
             border: 1.5px solid var(--card-border);

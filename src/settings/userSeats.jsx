@@ -76,12 +76,6 @@ class UserSeats extends Component {
               width: fit-content;
             }
           }
-          @media (min-width:1025px) { 
-
-          }
-          @media (min-width:1281px) { 
-
-          }
           @media (min-width:1435px) { 
             .userSeats-existingUsers-container {
               display: grid;
@@ -122,7 +116,6 @@ class UserSeats extends Component {
               width: fit-content;
             }
           }
-
         `}</style>
       </div>
     )
