@@ -3,7 +3,7 @@ import React from 'react';
 const divider = () => {
   return (
     <div className="divider">
-      <style>{`
+      <style jsx>{`
       .divider {
         width: 100%;
         border: solid .5px #E0E0E0;

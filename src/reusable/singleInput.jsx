@@ -12,11 +12,11 @@ class SingleInput extends Component {
     password = password === undefined ? 'input' : 'password';
   
     return (
-      <div className="singleInput-container" style={{ 'padding': `0 ${padding}`, 'grid-column-start': columnStart, 'grid-column-end': columnEnd}}>
+      <div className="singleInput-container" style={{ 'padding': `0 ${padding}`, 'gridColumnStart': columnStart, 'gridColumnEnd': columnEnd}}>
         <p className="title">{title}</p>
-        <div className="singleInput-info" style={{ 'font-size': `${fontSize}` }}>
+        <div className="singleInput-info" style={{ 'fontSize': `${fontSize}` }}>
           <input type={password} className="input-content" name={name} value={value} onChange={this.handleChange} placeholder={placeholder} style={{ 'width': '100%' }} />
-        </div>
+      </div>
         <style jsx>{`
           .singleInput-container {
             border: 1.5px solid var(--card-border);

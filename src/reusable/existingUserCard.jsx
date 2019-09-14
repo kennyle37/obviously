@@ -6,14 +6,14 @@ const ExistingUserCard = ({ title, content }) => {
   return (
     <div className="existing-container">
       <div className="existing-info">
-        <p className="title" style={{ 'margin-bottom': '0px', 'margin-top': '25px', 'font-size': '16px' }}>{title}</p>
+        <p className="title" style={{ 'marginBottom': '0px', 'marginTop': '25px', 'fontSize': '16px' }}>{title}</p>
         <p className="content">{content}</p>
       </div>
       <div className="existing-action">
         <div className="action-container">
           <div className="icon">
             <FontAwesomeIcon icon={faUserShield} />
-          </div>
+        </div>
           <p className="action-item">Admin</p>
         </div>
         <div className="action-container">

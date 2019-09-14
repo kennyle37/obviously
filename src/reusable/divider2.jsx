@@ -6,7 +6,7 @@ const divider = () => {
       <div className="divider-front"/>
       <p className="divider-break">OR</p>
       <div className="divider-back"/>
-      <style>{`
+      <style jsx>{`
       .divider-container {
         display: flex;
       }
@@ -25,6 +25,7 @@ const divider = () => {
       .divider-break {
         margin-left: 30px;
         margin-right: 30px;
+        color: var(--gray);
       }
       `}</style>
     </div>

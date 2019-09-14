@@ -13,18 +13,31 @@ import DisplayInput from '../reusable/displayInput';
 const background = require('../assets/images/group2.svg');
 
 class DataIndex extends Component {
+  state = {
+    hasFile: false,
+    name: '',
+  }
   handleUpload = files => {
     const name = files[0].name;
     const type = name.slice(name.length-4);
     if (type !== ".csv") {
       alert('Please insert a csv file!');
+      this.setState({
+        hasFile: false,
+        name: ''
+      })
       return;
     } else {
       const reader = new FileReader();
-      reader.onloadend = (e) => {
-        console.log(reader.result)
-      }
-      reader.readAsText(files[0]);
+      this.setState({
+        hasFile: true,
+        name: name,
+      }, () => {
+        reader.onloadend = (e) => {
+          console.log(reader.result)
+        }
+        reader.readAsText(files[0]);
+      })
     }
   }
 
@@ -43,6 +56,7 @@ class DataIndex extends Component {
             <ReactFileReader handleFiles={this.handleUpload} fileTypes={'.csv'}>
               <Upload name="Upload a CSV"/>
             </ReactFileReader>
+            <p className="file-upload">{this.state.name}</p>
             <Divider2 />
           </div>
           <p className="subheader">Connect a database</p>
@@ -65,7 +79,7 @@ class DataIndex extends Component {
           <Submit name="Add this database" />
         </div>
   
-        <style>{`
+        <style jsx>{`
           .data-container {
             flex-grow: 100;
             background: url(${background});
@@ -92,6 +106,12 @@ class DataIndex extends Component {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
+          }
+          .react-file-reader-button {
+            width: 400px;
+          }
+          .file-upload {
+            margin: 0;
           }
         `}</style>
       </div>
